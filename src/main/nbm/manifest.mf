@@ -1,4 +1,3 @@
 Manifest-Version: 1.0
-OpenIDE-Module-Layer: com/mycompany/html5palette/layer.xml
 OpenIDE-Module-Localizing-Bundle: com/mycompany/html5palette/Bundle.properties
 
