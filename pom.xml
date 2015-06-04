@@ -5,6 +5,10 @@
     <artifactId>HTML5FunPack</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>nbm</packaging>
+    <organization>
+        <name>Geertjan Wielenga</name>
+        <url>blogs.oracle.com/geertjan</url>
+    </organization>
     <build>
         <plugins>
             <plugin>
