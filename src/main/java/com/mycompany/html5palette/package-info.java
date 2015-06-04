@@ -20,7 +20,20 @@
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
-            itemid = "Data List",
+            itemid = "Required",
+            icon16 = "com/mycompany/html5palette/icons/required.png",
+            icon32 = "com/mycompany/html5palette/icons/required32.png",
+            body = "<form>\n"
+            + "<label for=\"movie\">What is your favorite movie : </label>\n"
+            + "<input name=\"movie\" type=\"text\" required />\n"
+            + "<input type=\"submit\" value=\"Submit\"/> \n"
+            + "</form>",
+            tooltip = "<input name=\"movie\" type=\"text\" required />",
+            name = "Required"),
+    @PaletteItemRegistration(
+            paletteid = "HTMLPalette",
+            category = "HTML5",
+            itemid = "DataList",
             icon16 = "com/mycompany/html5palette/icons/datalist.png",
             icon32 = "com/mycompany/html5palette/icons/datalist32.png",
             body = "<label for=\"country_name\">Country: "
