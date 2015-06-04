@@ -6,8 +6,8 @@
             icon16 = "com/mycompany/html5palette/icons/audio.png",
             icon32 = "com/mycompany/html5palette/icons/audio32.png",
             body = "<audio src=\"somefile.mp3\" controls loop autoplay></audio>",
-            name = "Audio",
-            tooltip = "<audio>"),
+            tooltip = "<audio src= controls loop autoplay></audio>",
+            name = "Audio"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
@@ -15,8 +15,8 @@
             icon16 = "com/mycompany/html5palette/icons/video.png",
             icon32 = "com/mycompany/html5palette/icons/video32.png",
             body = "<video src=\"somefile.mp4\" controls width=\"340\" height=\"210\"></video>",
-            name = "Video",
-            tooltip = "<video>"),
+            tooltip = "<video src= controls width= height=></video>",
+            name = "Video"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
@@ -33,8 +33,8 @@
             + "   <option value=\"Andorra\">\n"
             + "   <option value=\"Angola\">\n"
             + "</datalist>",
-            name = "Data List",
-            tooltip = "<datalist>")
+            tooltip = "<datalist id=\"\"><option value=\"\"></datalist>",
+            name = "Data List")
 })
 package com.mycompany.html5palette;
 
