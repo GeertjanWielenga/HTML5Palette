@@ -20,6 +20,26 @@
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
+            itemid = "Color",
+            icon16 = "com/mycompany/html5palette/icons/color.png",
+            icon32 = "com/mycompany/html5palette/icons/color32.png",
+            body = "<label for=\"color\">Color: </label>\n"
+            + "<input id=\"color\" type=\"color\" />",
+            tooltip = "<input type=\"color\" />",
+            name = "Color"),
+    @PaletteItemRegistration(
+            paletteid = "HTMLPalette",
+            category = "HTML5",
+            itemid = "Date",
+            icon16 = "com/mycompany/html5palette/icons/date.png",
+            icon32 = "com/mycompany/html5palette/icons/date32.png",
+            body = "<label for=\"dob\">Date of Birth: </label>\n"
+            + "<input id=\"dob\" type=\"date\" />",
+            tooltip = "<input type=\"date\" />",
+            name = "Date"),
+    @PaletteItemRegistration(
+            paletteid = "HTMLPalette",
+            category = "HTML5",
             itemid = "E-Mail",
             icon16 = "com/mycompany/html5palette/icons/email.png",
             icon32 = "com/mycompany/html5palette/icons/email32.png",
@@ -28,7 +48,7 @@
             + "<input id=\"email\" type=\"email\" required />\n"
             + "<input type=\"submit\" value=\"Submit\"/> \n"
             + "</form>",
-            tooltip = "<input name=\"movie\" type=\"email\" required />",
+            tooltip = "<input type=\"email\" required />",
             name = "E-Mail"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
@@ -59,7 +79,7 @@
             + "        document.querySelector('#volume').value = vol;\n"
             + "    }\n"
             + "</script>",
-            tooltip = "<input id=\"myRange\" type=\"range\" />",
+            tooltip = "<input type=\"range\" />",
             name = "Range"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
@@ -72,7 +92,7 @@
             + "<input name=\"movie\" type=\"text\" required />\n"
             + "<input type=\"submit\" value=\"Submit\"/> \n"
             + "</form>",
-            tooltip = "<input name=\"movie\" type=\"text\" required />",
+            tooltip = "<input type=\"text\" required />",
             name = "Required"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
