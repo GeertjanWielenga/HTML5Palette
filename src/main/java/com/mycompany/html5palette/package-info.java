@@ -23,20 +23,35 @@
             itemid = "Color",
             icon16 = "com/mycompany/html5palette/icons/color.png",
             icon32 = "com/mycompany/html5palette/icons/color32.png",
-            body = "<label for=\"color\">Color: </label>\n"
-            + "<input id=\"color\" type=\"color\" />",
+            body = "<label for=myfavcolor>Favorite Color: </label>\n"
+            + "<input id=\"myfavcolor\" \n"
+            + "       oninput=\"changeBackground(myfavcolor.value)\" \n"
+            + "       type=\"color\" \n"
+            + "       value=\"#333333\" \n"
+            + "       list=\"colors\">\n"
+            + "<datalist id=colors>\n"
+            + "    <option>#ffffff</option>\n"
+            + "    <option>#3dc283</option>\n"
+            + "    <option>#ff7700</option>\n"
+            + "</datalist>\n"
+            + "<script>\n"
+            + "    function changeBackground(selectedcolor) {\n"
+            + "        document.body.style.backgroundColor = selectedcolor;\n"
+            + "    }\n"
+            + "</script>",
             tooltip = "<input type=\"color\" />",
             name = "Color"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
-            itemid = "Date",
+            itemid = "Calendar",
             icon16 = "com/mycompany/html5palette/icons/date.png",
             icon32 = "com/mycompany/html5palette/icons/date32.png",
-            body = "<label for=\"dob\">Date of Birth: </label>\n"
-            + "<input id=\"dob\" type=\"date\" />",
+            body = "<p>Date: <input type=date step=7 min=2014-09-08> <!-- Monday only --></p>\n"
+            + "<p>Time: <input type=time min=09:00 max=17:00 step=900> <!-- 15m increments --></p>\n"
+            + "<p>Week: <input type=week step=2 min=2014-W30></p>",
             tooltip = "<input type=\"date\" />",
-            name = "Date"),
+            name = "Calendar"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
