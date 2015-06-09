@@ -59,12 +59,13 @@
             icon16 = "com/mycompany/html5palette/icons/email.png",
             icon32 = "com/mycompany/html5palette/icons/email32.png",
             body = "<form name=\"myform\" \n"
-            + "      onsubmit=\"return false\" \n"
-            + "      oninput=\"o.value = document.myform.inputbox.value\">\n"
-            + "    <label for=\"inputbox\">Enter your e-mail address: </label>\n"
-            + "    <input type=\"email\" id=\"inputbox\" name=\"inputbox\" required>\n"
+            + "      onsubmit=\"\n"
+            + "          o.value = document.myform.inputbox.value; \n"
+            + "          return false;\">\n"
+            + "    <label>Enter your e-mail address: </label>\n"
+            + "    <input type=\"email\" name=\"inputbox\" required>\n"
             + "    <input type=\"submit\">\n"
-            + "    <p><b><output name=\"o\"></output></b></p>\n"
+            + "    <p><output name=\"o\"></output></p>\n"
             + "</form>",
             tooltip = "<input type=\"email\" required />",
             name = "E-Mail"),
