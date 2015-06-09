@@ -55,20 +55,42 @@
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
-            itemid = "E-Mail",
-            icon16 = "com/mycompany/html5palette/icons/email.png",
-            icon32 = "com/mycompany/html5palette/icons/email32.png",
-            body = "<form name=\"myform\" \n"
-            + "      onsubmit=\"\n"
-            + "          o.value = document.myform.inputbox.value; \n"
-            + "          return false;\">\n"
-            + "    <label>Enter your e-mail address: </label>\n"
-            + "    <input type=\"email\" name=\"inputbox\" required>\n"
-            + "    <input type=\"submit\">\n"
-            + "    <p><output name=\"o\"></output></p>\n"
-            + "</form>",
-            tooltip = "<input type=\"email\" required />",
-            name = "E-Mail"),
+            itemid = "DragDrop",
+            icon16 = "com/mycompany/html5palette/icons/drag.png",
+            icon32 = "com/mycompany/html5palette/icons/drag32.png",
+            body = "<script>\n"
+            + "    function allowDrop(ev) {\n"
+            + "        ev.preventDefault();\n"
+            + "    }\n"
+            + "    function drag(ev) {\n"
+            + "        ev.dataTransfer.setData(\"text\", ev.target.id);\n"
+            + "    }\n"
+            + "    function drop(ev) {\n"
+            + "        ev.preventDefault();\n"
+            + "        var data = ev.dataTransfer.getData(\"text\");\n"
+            + "        var label = document.getElementById(data);\n"
+            + "        ev.target.appendChild(label);\n"
+            + "        var parent = label.parentNode.id;\n"
+            + "        label.innerHTML = 'dropped on area' + parent;\n"
+            + "    }\n"
+            + "</script>\n"
+            + "<div id=\"1\" style=\"width:350px;height:70px;padding:10px;\n"
+            + "     border:1px solid #aaaaaa;\" \n"
+            + "     ondrop=\"drop(event)\" \n"
+            + "     ondragover=\"allowDrop(event)\">\n"
+            + "</div>\n"
+            + "<br/><br/>\n"
+            + "<div id=\"2\" style=\"width:350px;height:70px;padding:10px;\n"
+            + "     border:1px solid #aaaaaa;\" \n"
+            + "     ondrop=\"drop(event)\" \n"
+            + "     ondragover=\"allowDrop(event)\">\n"
+            + "</div>\n"
+            + "<br/>\n"
+            + "<label id=\"drag\" \n"
+            + "       draggable=\"true\" \n"
+            + "       ondragstart=\"drag(event)\">drag me</label>",
+            tooltip = "<label draggable=\"true\" ondragstart=\"drag(event)\">drag me</label>",
+            name = "Drag & Drop"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
