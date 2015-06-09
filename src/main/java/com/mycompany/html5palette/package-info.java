@@ -55,7 +55,7 @@
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
-            itemid = "DragDrop",
+            itemid = "Drag",
             icon16 = "com/mycompany/html5palette/icons/drag.png",
             icon32 = "com/mycompany/html5palette/icons/drag32.png",
             body = "<script>\n"
@@ -90,7 +90,7 @@
             + "       draggable=\"true\" \n"
             + "       ondragstart=\"drag(event)\">drag me</label>",
             tooltip = "<label draggable=\"true\" ondragstart=\"drag(event)\">drag me</label>",
-            name = "Drag & Drop"),
+            name = "Drag"),
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
