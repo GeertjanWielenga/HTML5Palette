@@ -138,6 +138,28 @@
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
+            itemid = "Mail",
+            icon16 = "com/mycompany/html5palette/icons/email.png",
+            icon32 = "com/mycompany/html5palette/icons/email32.png",
+            body = "<form onsubmit=\"outputUpdate();return false\" name=\"myform\">\n"
+            + "    <label for=\"mail\">Enter your mail: </label>\n"
+            + "    <input id=\"mail\" name=\"mymail\" type=\"email\" required />\n"
+            + "    <input type=\"submit\" value=\"Submit\"/> \n"
+            + "    <hr>\n"
+            + "    <br/>\n"
+            + "    <output for=mymail name=\"myoutput\"></output>\n"
+            + "    <script>\n"
+            + "        function outputUpdate() {\n"
+            + "            var mymailValue = document.myform.mymail.value;\n"
+            + "            document.myform.myoutput.value = 'Your mail is: ' + mymailValue;\n"
+            + "        }\n"
+            + "    </script>\n"
+            + "</form>",
+            tooltip = "<input type=\"email\" required />",
+            name = "Mail"),
+    @PaletteItemRegistration(
+            paletteid = "HTMLPalette",
+            category = "HTML5",
             itemid = "DataList",
             icon16 = "com/mycompany/html5palette/icons/datalist.png",
             icon32 = "com/mycompany/html5palette/icons/datalist32.png",
