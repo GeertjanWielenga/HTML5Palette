@@ -142,8 +142,8 @@
             icon16 = "com/mycompany/html5palette/icons/email.png",
             icon32 = "com/mycompany/html5palette/icons/email32.png",
             body = "<form onsubmit=\"outputUpdate();return false\" name=\"myform\">\n"
-            + "    <label for=\"mail\">Enter your mail: </label>\n"
-            + "    <input id=\"mail\" name=\"mymail\" type=\"email\" multiple required />\n"
+            + "    <label for=\"mail\">Enter your mail addresses: </label>\n"
+            + "    <input id=\"mail\" name=\"mymail\" type=\"email\" size=\"50\" multiple required />\n"
             + "    <input type=\"submit\" value=\"Submit\"/> \n"
             + "    <hr>\n"
             + "    <br/>\n"
