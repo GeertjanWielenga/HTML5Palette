@@ -163,16 +163,31 @@
             itemid = "DataList",
             icon16 = "com/mycompany/html5palette/icons/datalist.png",
             icon32 = "com/mycompany/html5palette/icons/datalist32.png",
-            body = "<label for=\"country_name\">Country: "
-            + "</label>\n<input id=\"country_name\" name=\"country_name\" "
-            + "type=\"text\" list=\"country\" />\n"
-            + "<datalist id=\"country\">\n"
-            + "   <option value=\"Afghanistan\">\n"
-            + "   <option value=\"Albania\">\n"
-            + "   <option value=\"Algeria\">\n"
-            + "   <option value=\"Andorra\">\n"
-            + "   <option value=\"Angola\">\n"
-            + "</datalist>",
+            body = "<form onsubmit=\"outputUpdate();return false\" name=\"myform\">\n"
+            + "    <label for=\"country_name\">Country: </label>\n"
+            + "    <input id=\"country_name\" \n"
+            + "           name=\"mycountry\" \n"
+            + "           type=\"text\" \n"
+            + "           required\n"
+            + "           list=\"country\" />\n"
+            + "    <datalist id=\"country\">\n"
+            + "        <option value=\"Afghanistan\">\n"
+            + "        <option value=\"Albania\">\n"
+            + "        <option value=\"Algeria\">\n"
+            + "        <option value=\"Andorra\">\n"
+            + "        <option value=\"Angola\">\n"
+            + "    </datalist>\n"
+            + "    <input type=\"submit\"/>\n"
+            + "    <br/>\n"
+            + "    <hr>\n"
+            + "    <output name=myoutput></output>\n"
+            + "    <script>\n"
+            + "        function outputUpdate() {\n"
+            + "            var myCountryValue = document.myform.mycountry.value;\n"
+            + "            document.myform.myoutput.value = 'Your country is: ' + myCountryValue;\n"
+            + "        }\n"
+            + "    </script>\n"
+            + "</form>",
             tooltip = "<datalist id=\"\"><option value=\"\"></datalist>",
             name = "Data List")
 })
