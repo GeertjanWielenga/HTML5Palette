@@ -143,7 +143,7 @@
             icon32 = "com/mycompany/html5palette/icons/email32.png",
             body = "<form onsubmit=\"outputUpdate();return false\" name=\"myform\">\n"
             + "    <label for=\"mail\">Enter your mail: </label>\n"
-            + "    <input id=\"mail\" name=\"mymail\" type=\"email\" required />\n"
+            + "    <input id=\"mail\" name=\"mymail\" type=\"email\" multiple required />\n"
             + "    <input type=\"submit\" value=\"Submit\"/> \n"
             + "    <hr>\n"
             + "    <br/>\n"
