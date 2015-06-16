@@ -138,6 +138,19 @@
     @PaletteItemRegistration(
             paletteid = "HTMLPalette",
             category = "HTML5",
+            itemid = "Pattern",
+            icon16 = "com/mycompany/html5palette/icons/pattern.png",
+            icon32 = "com/mycompany/html5palette/icons/pattern32.png",
+            body = "<form action=\"demo_form.asp\">\n"
+            + "Country code: <input type=\"text\" required name=\"country_code\" \n"
+            + "pattern=\"[A-Za-z]{3}\" title=\"Three letter country code\">\n"
+            + "<input type=\"submit\">\n"
+            + "</form>",
+            tooltip = "<input type=\"text\" pattern=\"[A-Za-z]{3}\" />",
+            name = "Pattern"),
+    @PaletteItemRegistration(
+            paletteid = "HTMLPalette",
+            category = "HTML5",
             itemid = "Mail",
             icon16 = "com/mycompany/html5palette/icons/email.png",
             icon32 = "com/mycompany/html5palette/icons/email32.png",
